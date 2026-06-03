@@ -1,0 +1,519 @@
+/* MOBILE - GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F0F0;
+}
+
+header {
+    min-width: 400px;
+    background-color: #436436;
+    /*verde com opcidade*/
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+    box-shadow: 0 2px 10px #436436;
+}
+
+header img {
+    width: 60px;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    /*none*/
+    
+}
+
+#menu ul {
+    list-style-type: none;
+    margin-top: 40px;
+    border: solid 4px #436436;
+    border-radius: 8px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    background-color: #43643695;
+    color: #F7F0F0;
+    display: block;
+    padding: 16px;
+    font-family: "Montserrat", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+#menu ul li a:hover {
+    background-color: #e53d00f1;
+}
+
+#btn-menu,
+#btn-fechar {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#btn-fechar {
+    display: none;
+}
+
+#container-home{
+    margin: 0 24px;
+}
+#container-localizacao, #container-fale-conosco{
+    margin: 24px;
+}
+
+#imagem-boas-vindas {
+    max-width: 100%;
+    min-width: 400px;
+    margin-bottom: 24px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+#secao-1-home,
+.p-secao1, #secao-1-localizacao, .p-secao1-localizacao, #secao-fale-conosco, .p-secao-fale-conosco{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-variation-settings: "wdth" 100; */
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#secao-1-home, #secao-1-localizacao, #secao-fale-conosco {
+    align-items: center;
+    margin-bottom: 24px;
+    font-weight: 300;
+    /* 300 a  800*/
+}
+
+.p-secao1, .p-secao1-localizacao, .p-secao-fale-conosco{
+    align-items: flex-start;
+    font-size: 1.1rem;
+}
+
+#foto-colaboracao {
+    max-width: 40%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+#receba-atualizacoes {
+    background-image: url("../imagens/home7.jpg");
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    border-radius: 16px;
+    padding: 32px 48px;
+    margin-top: 24px;
+    box-shadow: 0 4px 10px #00000033;
+}
+#receba-atualizacoes form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#receba-atualizacoes h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+#receba-atualizacoes input {
+    border-radius: 8px;
+    padding: 8px;
+    width: 300px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 300 a  800*/
+    font-style: normal;
+}
+
+#receba-atualizacoes button {
+    border-radius: 8px;
+    padding: 8px;
+    width: 130px;
+    background-color: #E53D00;
+    color: #F7F0F0;
+}
+#receba-atualizacoes button:hover {
+    background-color: #F7F0F0;
+    color: #E53D00;
+}
+
+#rodape {
+    width: 100%;
+    min-width: 400px;
+    background-color: #436436;
+    color: #F7F0F0;
+    padding: 32px 24px 16px 24px;
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px #436436;;
+}
+
+
+#rodape p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 300 a  800*/
+    font-style: normal;
+    font-size: .80rem;
+}
+
+#rodape h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.imagens-contato {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    gap: 16px;
+    width: 150px;
+}
+.imagens-contato img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+#secao-rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 2px #F7F0F0;
+    gap: 16px;
+    padding: 16px;
+}
+
+#secao-rodape img {
+    width: 70px;
+}
+
+#navegacao-rodape ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#navegacao-rodape ul li a {
+    text-decoration: none;
+    color: #F7F0F0;
+    padding: 8px 0;
+    font-size: .8rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* 300 a  800*/
+    font-style: normal;
+}
+#navegacao-rodape ul li a:hover {
+    color: #E53D00;
+}
+
+.direitos-rodape {
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* PÁGINA SOBRE A ECOVIDA - PÁGINA NOSSOS PROJETOS - PÁGINA COMO AJUDAR*/
+#container-sobre,
+#container-projetos{
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#container-como-ajudar{
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.imagem-como-ajudar{
+    max-width: 60%;
+    border-radius: 16px;
+    
+    display: block;
+    margin: 32px auto;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+#container-sobre p,
+#container-projetos p, #container-como-ajudar p {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* 300 a  800*/
+    font-style: normal;
+}
+
+#cards-sobre,
+#cards-projetos, #cards-como-ajudar {
+    width: 100%;
+    margin: 16px 0 8px 0;
+    display: flex;
+}
+
+#cards-sobre {
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards-projetos {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#cards-como-ajudar {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+#cards-sobre img,
+#cards-projetos img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+#cards-sobre article,
+#cards-projetos article{
+    width: 100%;
+    background-color: #436436;
+    border: solid 2px #E53D00;
+    color: #F7F0F0;
+    border-radius: 16px;
+    margin: 24px 0;
+    box-shadow: 0 4px 10px #00000033;
+}
+#cards-sobre article:hover,
+#cards-projetos article:hover{
+    border: solid 2px #436436;
+}
+
+#cards-sobre article {
+    max-width: 310px;
+    min-width: 210px;
+}
+
+#cards-projetos article {
+    /* max-width: 290px; */
+    max-width: 290px;
+    min-width: 190px;
+    height: 600px;
+}
+#cards-como-ajudar article{
+    min-width: 210px;
+    border: solid 2px #436436;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px #00000033;
+}
+#cards-como-ajudar article:hover{
+    border: solid 2px #E53D00;
+}
+
+#cards-sobre article p,
+#cards-projetos article p {
+    padding: 16px;
+}
+
+#cards-projetos article h2{
+    padding: 16px 16px 0 16px;
+    font-size: 1.2rem;
+}
+#cards-como-ajudar article h2{
+    font-size: 1.3rem;
+}
+
+
+#p-card-sobre,
+#p-card-projetos, #p-card-como-ajudar {
+    text-align: center;
+    font-weight: 500;
+    border-bottom: solid 1px #E53D00;
+    padding-bottom: 8px;
+
+}
+
+/* Localização Span */
+.destaques-negrito{
+    font-weight: 600;
+}
+
+#mapa-localização{
+    width: 100%;
+    min-width: 250px;
+    margin: 24px 0;
+    border: #E53D00 solid 2px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px #00000033;
+}
+#mapa-localização:hover{
+    border: #436436 solid 2px;
+}
+#mapa-localização iframe{
+    width: 100%;
+    height: 320px;
+    
+    border-radius: 16px;
+    
+}
+#secao-fale-conosco a{
+    text-decoration: none;
+    color: #000;
+}
+#secao-fale-conosco a:hover{
+    color: #436436;
+
+}
+
+/* DESKTOP 1024PX */
+@media(min-width:1024px) {
+    #menu {
+        display: block;
+        position: relative;
+        height: 50px;
+        width: 800px;
+        font-size: .75rem;
+    }
+
+    #menu ul {
+        display: flex;
+        margin-top: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    header img {
+        width: 70px;
+        margin-left: 40px;
+        /* font-size: .75rem; */
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    #menu ul li a {
+        background-color: #43643600;
+        color: #F7F0F0;
+        margin-left: 16px;
+        font-size: 1rem;
+
+    }
+
+    #menu ul li a:hover {
+        border-radius: 16px;
+    }
+
+    #container-home{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        width: 1200px;
+    }
+
+    #secao-1-home {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        align-items: flex-start;
+
+    }
+
+    .p-secao1 {
+        max-width: 70%;
+    }
+
+    #foto-colaboracao {
+        max-width: 250px;
+    }
+
+    #rodape {
+        align-items: center;
+    }
+
+    #secao-rodape img {
+        width: 90px;
+    }
+
+    #secao-rodape {
+        max-width: 1200px;
+    }
+
+    /* PAGINA SOBRE - PÁGINA PROJETOS */
+
+    #cards-sobre,
+    #cards-projetos{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #container-como-ajudar, #container-fale-conosco, #container-sobre, #container-localizacao{
+        max-width: 1200px;
+    }
+    #secao-fale-conosco{
+        align-items: flex-start;
+    }
+
+}
